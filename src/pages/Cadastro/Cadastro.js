@@ -49,7 +49,7 @@ function Cadastro() {
 
 
       <label> Confirmação de Senha:  </label>
-      <input 
+      <input className="Cad"
         type="password" 
         name="ConfirSenha" 
         value={inputs.ConfirSenha || ""} 
@@ -57,7 +57,7 @@ function Cadastro() {
       />
 
       <label> Cidade:  </label>
-      <input 
+      <input className="Cad"
         type="text" 
         name="Cidade" 
         value={inputs.Cidade || ""} 

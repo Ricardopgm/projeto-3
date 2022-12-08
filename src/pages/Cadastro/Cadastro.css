@@ -1,4 +1,4 @@
-FormCadastro{
+.FormCadastro{
     background-color: #111;
     padding: 10px;
     align-items: center;
@@ -12,7 +12,7 @@ label {
 
 }
 
-Cad{
+.Cad{
     width: 90%;
     height: 45px;
     border-radius: 10px;
