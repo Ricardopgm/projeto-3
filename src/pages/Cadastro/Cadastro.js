@@ -9,72 +9,76 @@ function Cadastro() {
     const value = event.target.value;
     setInputs(values => ({...values, [name]: value}))
   }
-
+  function Botao() {
+   alert ("Seu cadastro foi concluído com sucesso!");
+  }
   const Submit = (event) => {
     event.preventDefault();
     console.log(inputs);
   }
 
   return (
+    <div>
     <form onSubmit={Submit}>
-      <label>Nome:
+      <label>Nome: </label>
       <input 
         type="text" 
         name="username" 
         value={inputs.username || ""} 
         onChange={handleChange}
       />
-      </label>
 
-      <label>Email:
+
+      <label>Email:  </label>
       <input 
         type="email" 
         name="email" 
         value={inputs.email || ""} 
         onChange={handleChange}
       />
-      </label>
+    
 
-      <label> Senha:
+      <label> Senha:  </label>
       <input 
-        type="text" 
+        type="password" 
         name="Senha" 
         value={inputs.Senha || ""} 
         onChange={handleChange}
       />
-      </label>
 
 
-      <label> Confirmação de Senha:
+      <label> Confirmação de Senha:  </label>
       <input 
-        type="text" 
+        type="password" 
         name="ConfirSenha" 
         value={inputs.ConfirSenha || ""} 
         onChange={handleChange}
       />
-      </label>
 
-      <label> Cidade:
+      <label> Cidade:  </label>
       <input 
         type="text" 
         name="Cidade" 
         value={inputs.Cidade || ""} 
         onChange={handleChange}
       />
-      </label>
+   
   
-      <label> Estado:
+      <label> Estado:  </label>
       <input 
         type="text" 
         name="Estado" 
         value={inputs.Estado || ""} 
         onChange={handleChange}
       />
-      </label>
+   
       <div className="Submit" >
-    <button type="Submit" >Enviar</button>
+      <button onClick={Botao}>
+  Enviar
+</button>
                             </div>
     </form>
+    </div>
   )
 }
 
