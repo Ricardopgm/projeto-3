@@ -7,5 +7,8 @@
 }
 
 .restaurante{
-    margin: center;
+    text-align: center;
+    margin:auto; 
+    font-weight: 500;
+    font-family: Roboto,sans-serif;
 }
