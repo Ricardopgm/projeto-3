@@ -13,13 +13,13 @@ function Cadastro() {
   function Botao() {
    alert ("Seu cadastro foi concluído com sucesso!");
   }
-  const Submit = (event) => {
+  const Envio = (event) => {
     event.preventDefault();
     console.log(inputs);
   }
 
   return (
-    <div>
+    <div className="FormCadastro">
     <form onSubmit={Submit}>
       <label>Nome: </label>
       <input 
@@ -73,7 +73,7 @@ function Cadastro() {
         onChange={handleChange}
       />
    
-      <div className="Submit" >
+      <div className="Envio" >
       <button onClick={Botao}>
   Enviar
 </button>
