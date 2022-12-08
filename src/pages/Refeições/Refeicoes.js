@@ -30,6 +30,7 @@ const Refeicoes = () => {
                   
                   <p className={styles.subTitulo}>Acompanhamentos: {post.acompanhamento}</p>
                   <p>Por apenas R${post.preco} reais!</p>
+                  <p className={styles.subTitulo}>Ingredientes: {post.ingredientes}</p>
                 </div>
               )
           })}
