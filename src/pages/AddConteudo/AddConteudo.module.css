@@ -12,7 +12,7 @@
     justify-content: center;
 }
 label{
-    color: black;
+    color: purple
 }
 .errorMessage{
     color: red;
