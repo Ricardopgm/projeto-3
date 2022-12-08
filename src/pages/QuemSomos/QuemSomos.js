@@ -1,4 +1,6 @@
 import './QuemSomos.css'
+import foto4 from '../../img/print.PNG'
+
 const QuemSomos= () => {
     return <>
 <>
