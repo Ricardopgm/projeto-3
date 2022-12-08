@@ -20,6 +20,7 @@ function Cadastro() {
 
   return (
     <div className="FormCadastro">
+        <h1> Cadastre-se Conosco </h1>
     <form onSubmit={Submit}>
       <label>Nome: </label>
       <input className="Cad"
