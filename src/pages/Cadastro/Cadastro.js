@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ReactDOM from "react-dom/client";
+import styles from './Cadastro.module.css';
 
 function Cadastro() {
   const [inputs, setInputs] = useState({});
