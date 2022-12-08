@@ -13,7 +13,7 @@ function Cadastro() {
   function Botao() {
    alert ("Seu cadastro foi concluído com sucesso!");
   }
-  const Envio = (event) => {
+  const Submit = (event) => {
     event.preventDefault();
     console.log(inputs);
   }
@@ -22,7 +22,7 @@ function Cadastro() {
     <div className="FormCadastro">
     <form onSubmit={Submit}>
       <label>Nome: </label>
-      <input 
+      <input className="Cad"
         type="text" 
         name="username" 
         value={inputs.username || ""} 
@@ -31,7 +31,7 @@ function Cadastro() {
 
 
       <label>Email:  </label>
-      <input 
+      <input className="Cad"
         type="email" 
         name="email" 
         value={inputs.email || ""} 
@@ -40,7 +40,7 @@ function Cadastro() {
     
 
       <label> Senha:  </label>
-      <input 
+      <input className="Cad" 
         type="password" 
         name="Senha" 
         value={inputs.Senha || ""} 
@@ -66,7 +66,7 @@ function Cadastro() {
    
   
       <label> Estado:  </label>
-      <input 
+      <input className="Cad" 
         type="text" 
         name="Estado" 
         value={inputs.Estado || ""} 
