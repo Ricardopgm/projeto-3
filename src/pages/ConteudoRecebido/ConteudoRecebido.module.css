@@ -1,0 +1,27 @@
+
+.cards{
+    display: flex;
+    margin: 5rem;
+    flex-wrap: wrap;
+}
+.card{
+    margin: 2rem;
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    width: min(300px, 70rem);
+}
+.btns{
+    display: flex;
+    align-items: center;
+}
+.btnEdit{
+    padding: 1rem;
+    
+}
+.botao{
+    border-radius: 1rem;
+    width: 100px;
+}

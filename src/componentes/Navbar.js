@@ -7,13 +7,14 @@ function ColorSchemesExample() {
     <>
       <Navbar bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="#home">GRUPO 3</Navbar.Brand>
+          <Navbar.Brand href="/Home">King Restaurant</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="/Home">Home</Nav.Link>
-            <Nav.Link href="/Pratos">Pratos</Nav.Link>
+            <Nav.Link href="/Refeicoes">Refeições</Nav.Link>
             <Nav.Link href="/Loggin">Loggin</Nav.Link>
             <Nav.Link href="/Cadastro">Cadastro</Nav.Link>
             <Nav.Link href="/Contato">Contato</Nav.Link>
+            <Nav.Link href="/AddConteudo">AddConteudo</Nav.Link>
           </Nav>
         </Container>
       </Navbar>

@@ -1,0 +1,13 @@
+.cardPost{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.fields{
+    display: flex;
+    flex-direction: column;
+}
+.btnPost{
+    display: flex;
+    justify-content: center;
+}
