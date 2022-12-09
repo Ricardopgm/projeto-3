@@ -11,9 +11,9 @@ function ColorSchemesExample() {
           <Nav className="me-auto">
             <Nav.Link href="/Home">Home</Nav.Link>
             <Nav.Link href="/Refeicoes">Refeições</Nav.Link>
-            <Nav.Link href="/Loggin">Loggin</Nav.Link>
+            <Nav.Link href="/Login">Loggin</Nav.Link>
             <Nav.Link href="/Cadastro">Cadastro</Nav.Link>
-            <Nav.Link href="/Contato">Contato</Nav.Link>
+            <Nav.Link href="/QuemSomos">Quem Somos</Nav.Link>
             <Nav.Link href="/AddConteudo">AddConteudo</Nav.Link>
           </Nav>
         </Container>
