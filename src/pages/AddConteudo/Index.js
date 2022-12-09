@@ -12,12 +12,12 @@ import axios from 'axios';
 // Função para o formulário ter alguns requerimentos.
 const validacaoForms = yup.object().shape({
     nome: yup.string().required("O título é obrigatório!").max(30, "O título precisa ter menos de 30 caracteres!"),
-  
-    acompanhamento: yup.string().required("O acompanhamento é obrigatório!").max(150, "A descrição precisa ter menos de 150 caracteres"),
-    
-    preco: yup.string().required("O Preço é obrigatório!").max(10, "O conteúdo precisa ter menos de 10 caracteres!"),
-  
-    ingredientes: yup.string().required("Os ingredientes são   obrigatório!").max(30, "O título precisa ter menos de 30 caracteres!")
+
+    acompanhamento: yup.string().required("O acompanhamento é obrigatório!").max(300, "O acompanhamento precisa ter menos de 300 caracteres"),
+
+    preco: yup.string().required("O Preço é obrigatório!").max(10, "O Preço precisa ter menos de 10 caracteres!"),
+
+    ingredientes: yup.string().required("Os ingredientes são obrigatório!").max(300, "Os ingredientes precisam ter menos de 300 caracteres!")
 })
 
 
@@ -48,19 +48,19 @@ function AddConteudo(){
 
                         <form onSubmit={handleSubmit(addPost)}>
                             <div className={styles.fields}>
-                                <label>Título</label>
+                                <label className={styles.tituloForm}>Título</label>
                                 <input type="text" name="nome" {...register("nome")} />
                                 <p className={styles.errorMessage}>{errors.nome?.message}</p>
 
-                                <label>Acompanhamentos</label>
+                                <label className={styles.tituloForm}>Acompanhamentos</label>
                                 <textarea type="text" name="acompanhamento" {...register("acompanhamento")}></textarea>
                                 <p className={styles.errorMessage}>{errors.acompanhamento?.message}</p>
 
-                                <label>Preço</label>
+                                <label className={styles.tituloForm}>Preço</label>
                                 <input type="text" name="preco" {...register("preco")} ></input>
                                 <p className={styles.errorMessage}>{errors.preco?.message}</p>
 
-                                <label>Ingredientes</label>
+                                <label className={styles.tituloForm}>Ingredientes</label>
                                 <textarea type="text" name="ingredientes" {...register("ingredientes")}></textarea>
                                 <p className={styles.errorMessage}>{errors.ingredientes?.message}</p>
 
