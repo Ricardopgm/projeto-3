@@ -19,7 +19,7 @@ function App() {
         <Routes>
           <Route index element={<Home />} />
           <Route path="/Home" element={<Home />} />
-          <Route path="/Contato" element={<QuemSomos />} />
+          <Route path="/QuemSomos" element={<QuemSomos />} />
           <Route path="/Refeicoes" element={<Refeicoes />} />
           <Route path="/Loggin" element={<Loggin />} />
           <Route path="/Cadastro" element={<Cadastro />} />
