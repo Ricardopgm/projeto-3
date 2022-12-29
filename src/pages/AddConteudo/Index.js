@@ -37,14 +37,14 @@ function AddConteudo(){
     })
 
     return(
-        <div>
+        <div className={styles.divPai}>
 
-            <main>
+            <main className={styles.formularioMae}>
                 <div className={styles.cardPost}>
-                    <h1>Adicionar Conteúdo</h1>
+                    <h1 className={styles.tituloAdd}>Adicionar Conteúdo</h1>
                     <div className="line-post"></div>
                     
-                    <div className="card-body-post">
+                    <div className={styles.card}>
 
                         <form onSubmit={handleSubmit(addPost)}>
                             <div className={styles.fields}>
@@ -61,7 +61,7 @@ function AddConteudo(){
                                 <p className={styles.errorMessage}>{errors.preco?.message}</p>
 
                                 <label className={styles.tituloForm}>Ingredientes</label>
-                                <textarea type="text" name="ingredientes" {...register("ingredientes")}></textarea>
+                                <textarea rows="7" type="text" name="ingredientes" {...register("ingredientes")}></textarea>
                                 <p className={styles.errorMessage}>{errors.ingredientes?.message}</p>
 
                                 <div className={styles.btnPost}>

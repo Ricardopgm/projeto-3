@@ -1,3 +1,9 @@
+:root{
+    --gradient: linear-gradient(
+        to right, #c434ff, #3bbcfe
+    )
+}
+
 .cardPost{
     display: flex;
     align-items: center;
@@ -11,12 +17,35 @@
     display: flex;
     justify-content: center;
 }
-.tituloForm{
-    color: black;
+.card{
+    padding: 30px;
+    background-image: linear-gradient(to right, #3bbcfe, #c434ff);
+    border-radius: 20px;
 }
 .errorMessage{
     color: red;
 }
+/* Formulário */
+.tituloForm{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+.formularioMae{
+    padding: 5rem 1rem 11rem 1rem;
+    color: white;
+}
+.divPai{
+    background: rgb(0, 0, 0);
+}
+.tituloAdd, .paragrafo{
+    background-image: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+/* fim formulário */
 .botao{
     height: 30px;
     border-radius: 10px;
@@ -24,7 +53,7 @@
     font-weight: 800;
     font-size: 16px;
 
-    padding: 5px 50px;
+    padding: 5px 35px;
     color:black;
     background: -webkit-linear-gradient(to left, #21d4fd , #d721ff);
     background: -o-linear-gradient(to left, #21d4fd , #d721ff);
@@ -35,12 +64,10 @@
     border-radius: 10px;
 
     cursor: pointer;
-    
 }
 .btnEdit{
     display: flex;
     justify-content: center;
-
 }
 .paragrafo{
     display: flex;

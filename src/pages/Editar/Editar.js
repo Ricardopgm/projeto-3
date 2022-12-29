@@ -48,31 +48,31 @@ const Editar = () => {
     <>
       <main>
         <div className={styles.cardPost}>
-            <h1>Editar Conteúdo</h1>
+            <h1 className={styles.tituloAdd}>Editar Conteúdo</h1>
             <div className="line-post"></div>
             
-            <div className="card-body-post">
+            <div className={styles.cardBody}>
 
               <form onSubmit={handleSubmit(addPost)}>
                   <div className={styles.fields}>
-                      <label>Título</label>
+                      <label className={styles.tituloForm}>Título</label>
                       <input type="text" name="nome" {...register("nome")} />
                       <p className="error-message">{errors.nome?.message}</p>
 
-                      <label>Acompanhamentos</label>
+                      <label className={styles.tituloForm}>Acompanhamentos</label>
                       <textarea type="text" name="acompanhamento" {...register("acompanhamento")}></textarea>
                       <p className="error-message">{errors.acompanhamento?.message}</p>
 
-                      <label>Preço</label>
+                      <label className={styles.tituloForm}>Preço</label>
                       <input type="text" name="preco" {...register("preco")} ></input>
                       <p className="error-message">{errors.preco?.message}</p>
 
-                      <label>Ingredientes</label>
-                      <textarea type="text" name="ingredientes" {...register("ingredientes")}></textarea>
+                      <label className={styles.tituloForm}>Ingredientes</label>
+                      <textarea rows="7" type="text" name="ingredientes" {...register("ingredientes")}></textarea>
                       <p className="error-message">{errors.ingredientes?.message}</p>
 
                       <div className={styles.btnPost}>
-                        <button type="submit">Enviar</button>
+                        <button className={styles.botao} type="submit">Enviar</button>
                       </div>
                   </div>
               </form>
